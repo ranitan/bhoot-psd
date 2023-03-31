@@ -1,0 +1,52 @@
+.div1 {
+    background-image: url('/assets/images/bg.png');
+}
+
+.nav-link{
+    padding: 5px;
+    font-size: 16px;
+line-height: 100px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Quicksand";
+text-align: right;
+}
+
+
+
+.heading-1 {
+    margin-left: 300px;
+    margin-top: 330px;
+}
+
+#h1 {
+    color: #aab33c;
+    font-family: "00819";
+}
+
+#p1 {
+    font-size: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+.btn-btn1 {
+    background-color: #aab33c;
+ 
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Quicksand";
+    text-align: right;
+}
+
+.btn-btn2 {
+    background-color: #aab33c;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
