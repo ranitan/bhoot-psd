@@ -10,11 +10,9 @@
   <script src="ASSETS/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <style>
-    #page1 {
-      background-image: url(/assets/images/background1.png);
-      background-size:contain;
-      background-repeat: no-repeat;
+    body{
       width: 100%;
+      overflow-x: hidden;
     }
 
     #navcontent {
@@ -32,7 +30,7 @@
 
     #best {
       color: #a9b33b;
-      font-family: "00819";
+      font-family: the best;
     }
 
     #pre {
@@ -54,21 +52,34 @@
       src: url(assets/css/00819\ Regular.ttf);
     }
 
-    #best {
-      font-family: the best;
-    }
     #bestcontainer{
-      margin-top: 500px;
+      margin-top: 200px;
+      position: absolute;
+    }
+    #page1{
+      position:relative;
+    }
+
+    #imgbg1{
+      width: 100vw;
+    }
+    #page1 {
+      position: absolute;
+      top:0px;
+
     }
   </style>
 </head>
 
 <body>
-  <!--page 1-->
+ 
+  <!--page 1--><div class="cointainer">
+    <img src="assets/images/background1.png" class="img-resposive img-fluid" alt="imgbg1" id="imgbg1"> 
+  </div>
   <div class="container-fluid" id="page1">
     <div class="row">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light  bg-transparent " id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light  bg-transparent " id="nav">
         <!--navbar logo-->
         <div class=" col-3 col-sm-3 col-md-3 col-lg-3 ">
           <a class="navbar-brand ms-1" href="#">
@@ -76,9 +87,8 @@
           </a>
         </div>
         <!-- toggle button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler col-md-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span></button>
         </button>
         <!-- navbar contents -->
         <div class="collapse navbar-collapse ms-5" id="navcontent">
@@ -113,8 +123,9 @@
         </div>
       </nav>
     </div>
-    <div class="row" style="height:500px;">
-      <div class="col-10 col-sm-6 col-md-6 col-lg-6 ms-5 mt-5" id="bestcontainer">
+    <!---contents-->
+    <div class="row">
+      <div class=" col-6 offset-2 col-sm-6 col-md-5 offset-sm-2 offset-md-2 col-lg-6 offset-lg-2" id="bestcontainer">
         <p class="h1" id="best">The Best</p>
         <pre id="pre">
 REAL ESTATE ANALYSIS 
@@ -123,6 +134,9 @@ SOFTWARE IN NORTH AMERICA</pre>
       </div>
     </div>
   </div>
+  <!--background image1-->
+  
+  <!--contents-->
   <div class="container-fluid">
     <div class="row justify-content-center">
       <pre class="col-4 col-sm-4 col-md-4 col-lg-4  ms-5 mt-3" id="pre1">
