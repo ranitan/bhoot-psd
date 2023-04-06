@@ -9,77 +9,14 @@
   <link rel="stylesheet" href="ASSETS/css/bootstrap.min.css">
   <script src="ASSETS/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-  <style>
-    body{
-      width: 100%;
-      overflow-x: hidden;
-    }
-
-    #navcontent {
-      font-size: small;
-      font-family: 'Quicksand';
-    }
-
-    #button {
-      background-color: #a9b33b;
-    }
-
-    #button:hover {
-      background-color: #838b26;
-    }
-
-    #best {
-      color: #a9b33b;
-      font-family: the best;
-    }
-
-    #pre {
-      color: #ffffff;
-      font-size: larger;
-      font-weight: 700;
-      font-family: "Quicksand";
-    }
-
-    #pre1 {
-      color: #404142;
-      font-weight: 700;
-      font-family: "Quicksand";
-      text-align: center;
-    }
-
-    @font-face {
-      font-family: the best;
-      src: url(assets/css/00819\ Regular.ttf);
-    }
-
-    #bestcontainer{
-      margin-top: 200px;
-      position: absolute;
-    }
-    #page1{
-      position:relative;
-    }
-
-    #imgbg1{
-      width: 100vw;
-    }
-    #page1 {
-      position: absolute;
-      top:0px;
-
-    }
-    .col{
-      width:15%;
-      height:250px;
-      background-color:;
-    }
-  </style>
+  <link  rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
- 
-  <!--page 1--><div class="cointainer">
-    <img src="assets/images/background1.png" class="img-resposive img-fluid" alt="imgbg1" id="imgbg1"> 
+
+  <!--page 1-->
+  <div class="cointainer">
+    <img src="assets/images/background1.png" class="img-resposive img-fluid" alt="imgbg1" id="imgbg1">
   </div>
   <div class="container-fluid" id="page1">
     <div class="row">
@@ -92,7 +29,9 @@
           </a>
         </div>
         <!-- toggle button -->
-        <button class="navbar-toggler col-md-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler col-md-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span></button>
         </button>
         <!-- navbar contents -->
@@ -140,60 +79,75 @@ SOFTWARE IN NORTH AMERICA</pre>
     </div>
   </div>
   <!--background image1-->
-  
+
   <!--contents-->
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <pre class="col-4 col-sm-4 col-md-4 col-lg-4  ms-5 mt-3" id="pre1">
-      TO MAKE AN INFORMED DECISION WHEN
-       BUYING OR PURCHASING AN INCOME
-                  PROPERTY ! 
+      <pre class="col-5 text-center" id="content">
+      <b>TO  MAKE  AN  INFORMED  DECISION  WHEN
+          BUYING OR PURCHASING AN INCOME
+                  PROPERTY ! </b>
     </pre>
     </div>
   </div>
+  <!--cards-->
   <div>
-    <div class="row row-cols-1 row-cols-md-3 g-4 offset-1">
-      <div class="col" id="cards">
-        <div class="card h-100 offset-1">
-          <img src="assets/images/cardimg1.svg" class="card-img-top" alt="...">
+    <div class="row ">
+      <div class="col-lg-3 text-center" id="card">
+        <div class="card border-0 bg-light mb-2">
           <div class="card-body">
-            <h5 class="card-title"><b>user friendly interfaceV</b></h5>
+            <img src="assets/images/cardimg1.svg" class="img-fluid" alt="...">
+            <h5 class="card-title"><b>user friendly interfacev</b></h5>
           </div>
         </div>
       </div>
-      <div class="col">
-        
-        <div class="card h-100 offset-2">
-          <img src="assets/images/cardimg2.svg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><b>Automatic analysis revision</b></h5>
-          
-          </div>
-        </div>
-      </div>
-      <div class="col ">
-        <div class="card h-100 offset-3">
-          <img src="assets/images/cardimg3.svg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><b>Step-by-step data gathering</b></h5>
-           
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 offset-4">
-          <img src="assets/images/cardimg4.svg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><b>Sell price evaluation feature</b></h5>
-           
-          </div>
-        </div>
-      </div>
-    </div> 
-  
- 
-  </div>
+      <div class="col-lg-3 text-center" id="card">
+        <div class="card border-0 bg-light mb-2">
 
+          <div class="card-body">
+            <img src="assets/images/cardimg2.svg" class="img-fluid" alt="...">
+
+            <h5 class="card-title"><b>Automatic analysis revision</b></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 text-center" id="card">
+        <div class="card border-0 bg-light mb-2">
+
+          <div class="card-body">
+            <img src="assets/images/cardimg3.svg" class="img-fluid" alt="...">
+
+            <h5 class="card-title"><b>Step-by-step data gathering</b></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 text-center" id="card">
+        <div class="card border-0 bg-light mb-2">
+
+          <div class="card-body">
+            <img src="assets/images/cardimg4.svg" class="img-fluid" alt="...">
+
+            <h5 class="card-title"><b>Sell price evaluation featur</b></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!--phone part-->
+    <div class="container">
+
+    <div class="row">
+        <div class="col-lg-8">
+            <pre class="phone-para">Analyze any kind of Real
+           Estate investment</pre>
+        </div>
+        <div class="float-end">
+            <img src="assets/images/phone.png" class="rounded float-end" alt="phone" height="250px" id="phoneimg">
+        </div>
+    </div>
+
+</div>
 </div>
 
 

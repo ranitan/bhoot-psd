@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#navcontent {
+    font-size: small;
+    font-family: 'Quicksand';
+}
+
+#button {
+    background-color: #a9b33b;
+}
+
+#button:hover {
+    background-color: #838b26;
+}
+
+#best {
+    color: #a9b33b;
+    font-family: the best;
+}
+
+#pre {
+    color: #ffffff;
+    font-size: larger;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+#pre1 {
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+    text-align: center;
+}
+
+@font-face {
+    font-family: the best;
+    src: url(assets/css/00819\ Regular.ttf);
+}
+
+#bestcontainer {
+    margin-top: 200px;
+    position: absolute;
+}
+
+#page1 {
+    position: relative;
+}
+
+#imgbg1 {
+    width: 100vw;
+}
+
+#page1 {
+    position: absolute;
+    top: 0px;
+
+}
+
+.col {
+    width: 15%;
+    height: 250px;
+    background-color: ;
+}
+
+.card-body {
+    border-radius: 20px;
+}
+
+#content pre {
+
+
+
+    color: #404142;
+
+    font-family: "Quicksand";
+    text-align: center;
+}
+#phoneimg{
+    margin-right: 100px;
+    height: 500px;
+}
