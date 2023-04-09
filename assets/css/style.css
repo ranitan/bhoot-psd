@@ -13,6 +13,10 @@ body {
   font-size: small;
   font-family: "Quicksand";
 }
+#navcontent:hover{
+  transform: scale(1.1);
+  transition:ease-out ;
+}
 
 #button {
   background-color: #a9b33b;
@@ -20,11 +24,14 @@ body {
 
 #button:hover {
   background-color: #838b26;
+  transform: scale(1.1);
+  transition:ease-out ;
 }
 
 #bestcontainer p {
   color: #a9b33b;
   font-family: the best;
+  
 }
 
 #pre {
@@ -106,12 +113,17 @@ body {
   margin-left: 30px;
   padding: 10px;
   margin-right: 10px;
-
+  
+}
+.card:hover{
+  transform: scale(1.1);
+  transition:ease-out ;
 }
 
 .card-card {
   margin-top: 20px;
 }
+
 
 .card-text1 {
   margin-top: 10px;
@@ -175,9 +187,13 @@ body {
   position: absolute;
 }
 #phone-img img {
-  background-image: url(/assets/images/phonebg.svg);
+  background-image: url(/assets/images/homebg.png);
   height: 40px;
   padding: 4px 5px;
+}
+#phone-img img:hover{
+  transform: scale(1.1);
+  transition:ease-out ;
 }
 
 .container #p1 {
@@ -336,48 +352,115 @@ font-family: "Quicksand";
 text-align: center;
 }
      
-        .card-testimonial {
-            margin-top: 0;
-            margin-bottom: 60px;
-            text-align: center;
-        } 
+.--card:hover:hover{
+  transform: scale(1.1);
+  transition:ease-out ;
+}
+#innercard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  background-color: #fdffe9;
+  margin-left: 50px;
+  margin-top:-40px;
+  position: relative;
+  z-index: 1;
+}
+#botcard123{
+  height: 238px;
+}
+#innercardtext {
+  flex: 1;
+}
 
-        .container-fluid {
-            display: inline-block;
-            position: relative;
-            width: 100%;
-            margin-bottom: 30px;
-            border-radius: 6px;
-            color: rgba(0, 0, 0, 0.87);
-            background: #fff;
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-        }
+#innerpara {
+  margin-top: auto;
+  font-size: 13px;
+  color: #313132;
+  font-weight: 600;
+  font-family: "Quicksand";
+}
 
-        .card-testimonial .icon {
-            font-size: 40px;
-        } 
 
-         .card-testimonial .icon {
-            margin-top: 30px;
-        } 
+.footer-bg {
+  background-image: url(/assets/IMAGES/footbg.png);
+}
 
-         .category {
-            position: relative;
-            line-height: 0;
-            margin: 15px 0;
-        } 
+.font-2 {
+  width: 260px;
+  height: 130px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #404142;
+  font-weight: 400;
+  font-family: "Quicksand";
+}
 
-        .card-testimonial .ftr .card-avatar {
-            margin-top: 10px;
-            margin-bottom: -50px;
-            
-        }
+.font-3 {
+  font-size: 70%;
+  color: #404142;
+  font-family: "Quicksand";
+}
 
-        .ftr{
-            background-color: aqua;
-            width:80%;
-            margin-left: 10%;
-        }
-    
-   
+.font-4,
+.font-5 {
+  font-size: 70%;
+  color: #404142;
+  font-weight: 500;
+  font-family: "Quicksand";
+}
 
+.font-bg-4,
+.font-bg-5 {
+  color: black;
+  text-decoration: none;
+}
+
+.font-bg-4:hover,
+.font-bg-5:hover {
+  color: #848d00;
+}
+
+.but-footer {
+  color: #ffffff;
+  background-color: #acb643;
+  font-size: small;
+  border: none;
+}
+
+.but-footer:hover {
+  background-color: #8b9429;
+}
+
+#fav {
+  color: #a8b336;
+}
+
+#fav-2 {
+  color: white;
+}
+
+.form-control {
+  border: none;
+  outline: 0px;
+}
+
+#addon-wrapping {
+  background-color: #acb643;
+}
+
+#basefoot{
+  background-color: #aab33c;
+}
+#basefoottext{
+font-size: 13px;
+letter-spacing: 2px;
+font-weight: 500;
+font-family: "Quicksand";
+}
+#basefootertext:hover{
+  color: #313132;
+  cursor: pointer;
+}
