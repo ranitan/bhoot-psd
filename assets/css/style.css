@@ -277,7 +277,10 @@ td {
   text-align: left;
   padding: 18px 10px 18px 10px;
 }
-
+ td img:hover{
+  transform: scale(1.5);
+  transition:ease-out ;
+}
 .columns tr:nth-child(odd) {
   background-color: whitesmoke;
 }
