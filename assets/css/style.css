@@ -335,5 +335,49 @@ font-weight: 700;
 font-family: "Quicksand";
 text-align: center;
 }
+     
+        .card-testimonial {
+            margin-top: 0;
+            margin-bottom: 60px;
+            text-align: center;
+        } 
+
+        .container-fluid {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            color: rgba(0, 0, 0, 0.87);
+            background: #fff;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .card-testimonial .icon {
+            font-size: 40px;
+        } 
+
+         .card-testimonial .icon {
+            margin-top: 30px;
+        } 
+
+         .category {
+            position: relative;
+            line-height: 0;
+            margin: 15px 0;
+        } 
+
+        .card-testimonial .ftr .card-avatar {
+            margin-top: 10px;
+            margin-bottom: -50px;
+            
+        }
+
+        .ftr{
+            background-color: aqua;
+            width:80%;
+            margin-left: 10%;
+        }
+    
    
 
