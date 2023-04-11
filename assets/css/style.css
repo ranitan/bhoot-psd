@@ -3,12 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* body */
 body {
   width: 100%;
   overflow-x: hidden;
 }
-
+/* nav bar */
 #navcontent {
   font-size: small;
   font-family: "Quicksand";
@@ -28,7 +28,7 @@ body {
   transform: scale(1.1);
   transition: ease-out;
 }
-
+/*page1 contents */
 #bestcontainer p {
   color: #a9b33b;
   font-family: the best;
@@ -71,7 +71,7 @@ body {
   position: absolute;
   top: 0px;
 }
-
+/* contents below page1 */
 .col {
   width: 15%;
   height: 250px;
@@ -104,7 +104,7 @@ body {
   font-family: "Quicksand";
   text-align: center;
 }
-
+/* cards in page2 */
 .card {
   opacity: 1;
   width: 200px;
@@ -183,7 +183,7 @@ body {
   font-family: "Quicksand";
   text-align: center;
 }
-
+/* page3 phone part */
 #phonepp {
   height: 400px;
   width: 250px;
@@ -229,7 +229,7 @@ body {
   font-weight: 700;
   font-family: "Quicksand";
 }
-
+/* page4 computer part */
 #computer img {
   width: 450px;
   height: 600px;
@@ -265,7 +265,7 @@ body {
 #compu {
   background-color: #e2e7a7;
 }
-
+/* table in page5 */
 .table {
   border-collapse: collapse;
   width: 100%;
@@ -371,7 +371,7 @@ tr:nth-child(even) {
   text-align: center;
 }
 
-/*cards*/
+/*cards in page 6*/
 .--card:hover:hover {
   transform: scale(1.1);
   transition: ease-out;
@@ -406,7 +406,7 @@ tr:nth-child(even) {
   font-family: "Quicksand";
 }
 
-/*getting deal*/
+/*getting deal part under cards in page 6*/
 .dealbutton p {
   font-size: 30px;
   color: #404142;
@@ -520,6 +520,7 @@ tr:nth-child(even) {
 }
 
 /* media queries */
+
 @media screen and(min-width:700px){
   #cimg,
   #ph {
@@ -530,6 +531,7 @@ tr:nth-child(even) {
     margin-left:55px;
 } 
 }
+
 @media screen and (min-width:300px) and (max-width:1024px) {
   #cimg,
   #ph {
@@ -555,6 +557,11 @@ tr:nth-child(even) {
 
   #cbtn button {
     margin-left: 500px;
+  }
+  #navbarSupportedContent{
+  position: absolute;
+  z-index: 1;
+  margin-top: 300px;
   }
 
 }
