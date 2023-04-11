@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 /* body */
+p{
+  font-size: small;
+}
 body {
   width: 100%;
   overflow-x: hidden;
@@ -530,9 +533,12 @@ tr:nth-child(even) {
     offset:1;
     margin-left:55px;
 } 
+.columns{
+  width:auto
+}
 }
 
-@media screen and (min-width:300px) and (max-width:1024px) {
+@media screen  and (max-width:425px) {
   #cimg,
   #ph {
     display: none;
@@ -555,13 +561,79 @@ tr:nth-child(even) {
     display: none;
   }
 
-  #cbtn button {
-    margin-left: 500px;
-  }
   #navbarSupportedContent{
   position: absolute;
   z-index: 1;
   margin-top: 300px;
   }
+  .columns{
+    width:auto
+  }
+}
+@media screen and (max-width:375px){
+  #bestcontainer {
+    margin-top: 30px;
+    position: absolute;
+  }
+  #card1 {
+    offset:1;
+    margin-left:28px;
+}
+.columns{
+  width:auto
+}
+#computer #cbtn{
+  margin-left: 10px;
+}
+}
+@media screen and (max-width:320px){
+  #bestcontainer {
+    margin-top: 20px;
+    position: absolute;
+  }
+  #card1 {
+    offset:1;
+    margin-left:27px;
+}
+.columns{
+  width:auto;
+}
+body{
+  overflow-x: hidden;
+}
+ #computer #cbtn{
+  margin-left: 10px;
+}
+#computer, #cimg, .comp {
+  height:19%;
+  width:242%;
+}
+#comp p{
+  height:19%;
+  width:371%;
+}
+}
+@media screen and (max-width:768px){
+  #bestcontainer {
+    margin-top: 30px;
+    position: absolute;
+    margin-left: 10px;
 
+  }
+  #card1 {
+    offset:1;
+    margin-left:60px;
+
+}
+#ph img{
+  width: 20%;
+  height:50%;
+  margin-top:-100px;
+}
+.columns{
+  width:auto
+}
+#computer #cbtn{
+  margin-left: 10px;
+}
 }

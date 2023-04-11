@@ -20,10 +20,10 @@ $(document).ready(function () {
       },
     },
     messages: {
-      uname: "required",
-      phone: "required",
-      email: "required",
-      comments: "required",
+      uname: "Enter Name",
+      phone: "Enter valid Phone number",
+      email: "Enter valid Email",
+      comments: "Your Comments",
     },
   });
 });
