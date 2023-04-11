@@ -515,23 +515,35 @@ tr:nth-child(even) {
   cursor: pointer;
 }
 
+.error{
+  color: red;
+}
 
 /* media queries */
-@media screen and (min-width:300px) and (max-width:1024px) {
-
+@media screen and(min-width:700px){
   #cimg,
   #ph {
     display: none;
   }
-
-  #bestcontainer {
+  #card1 {
+    offset:1;
+    margin-left:55px;
+} 
+}
+@media screen and (min-width:300px) and (max-width:1024px) {
+  #cimg,
+  #ph {
+    display: none;
+  }
+ #bestcontainer {
     margin-top: 100px;
     position: absolute;
   }
 
-  #card1 {
-    margin-left: 60px;
-  }
+   #card1 {
+    offset:1;
+    margin-left:55px;
+} 
 
   #bestcontainer #pre {
     display: none;

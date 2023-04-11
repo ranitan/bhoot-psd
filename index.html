@@ -13,6 +13,8 @@
   <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+  <script src="validate.js"></script>
+  <script src="https://kit.fontawesome.com/d509f79d02.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -98,14 +100,14 @@ SOFTWARE IN NORTH AMERICA</pre>
 
       <div class="row ">
 
-        <div id="card1" class="col-lg-2 cards offset-">
+        <div id="card1" class="col-lg-2 col-md-6 col-sm-6 ">
           <div class="card mb-4 align-items-center">
             <img src="/assets/images/cardimg1.svg" alt="" class="card-img w-50 h-50">
             <p class="card-text1"> User-friendly interface</p>
           </div>
         </div>
 
-        <div class="col-lg-2 cards offset-1 ">
+        <div class="col-lg-2  col-md-6 col-sm-6 cards offset-1 ">
 
           <div class="card mb-4 align-items-center  ">
             <img src="/assets/images/cardimg2.svg" alt="" class="card-img w-50 h-50">
@@ -114,7 +116,7 @@ SOFTWARE IN NORTH AMERICA</pre>
 
         </div>
 
-        <div class="col-lg-2 cards offset-1 ">
+        <div class="col-lg-2 col-md-6 col-sm-6 cards offset-1 ">
 
           <div class="card mb-4 align-items-center">
             <img src="/assets/images/cardimg3.svg" alt="" class="card-img w-50 h-50">
@@ -123,7 +125,7 @@ SOFTWARE IN NORTH AMERICA</pre>
 
         </div>
 
-        <div class="col-lg-2 cards offset-1 ">
+        <div class="col-lg-2 col-md-6 col-sm-6 cards offset-1 ">
 
           <div class="card mb-4 align-items-center">
             <img src="/assets/images/cardimg4.svg" alt="" class="card-img w-50 h-50">
@@ -436,27 +438,27 @@ SOFTWARE IN NORTH AMERICA</pre>
         </div>
 
 
-        <form class="col-6 col-sm-3 col-md-2  mt-4 " method="get"
+        <form class="col-6 col-sm-3 col-md-2  mt-4 was-validated" method="get"
           action="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1CHBD_enIN1041IN1042&oq=goog&aqs=chrome.2.69i57j35i39j46i131i199i433i465i512j69i60l4j5.2019j0j7&sourceid=chrome&ie=UTF-8"
           id="myform" name="myform">
           <div class="input-group flex-nowrap mb-2" id="myform" name="myform">
             <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-user" id="fav-2"></i></span>
-            <input type="text" class="form-control" id="uname" placeholder="Username" name="uname">
+            <input type="text" class="form-control" id="uname" placeholder="Username" name="uname" required>
           </div>
           <div class="input-group flex-nowrap mb-2" id="myform" name="myform">
             <span class="input-group-text icon" id="addon-wrapping"><i class="fa-regular fa-envelope"
                 id="fav-2"></i></span>
-            <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+            <input type="text" class="form-control" id="email" placeholder="Email" name="email" required>
           </div>
-          <div class="input-group flex-nowrap mb-2" id="myform" name="myform">
+          <div class="input-group flex-nowrap mb-2" id="myform" name="myform" required>
             <span class="input-group-text icon" id="addon-wrapping"><i class="fa-sharp fa-solid fa-square-phone"
                 id="fav-2"></i></span>
-            <input type="text" class="form-control" id="phone" placeholder="Phone" name="phone">
+            <input type="text" class="form-control" id="phone" placeholder="Phone" name="phone" required>
           </div>
           <div class="input-group flex-nowrap mb-2" id="myform" name="myform">
             <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-comment"
                 id="fav-2"></i></span>
-            <input type="text" class="form-control" id="comments" placeholder="Comments" name="comments">
+            <input type="text" class="form-control" id="comments" placeholder="Comments" name="comments" required>
           </div>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <button class="rounded-1 but-footer ps-3 pe-3" type="submit" value="register">SUBMIT</button>
@@ -476,37 +478,7 @@ SOFTWARE IN NORTH AMERICA</pre>
     </div>
   </footer>
 
-  <script>
-    $(document).ready(function () {
-      $("#myform").validate({
-        rules: {
-          uname: {
-            required: true,
-            minlength: 5,
-            maxlength: 10,
-            pattern: /^(\w){5,10}$/,
-          },
-          email: {
-            required: true,
-            email: true,
-          },
-          phone: {
-            required: true,
-            pattern: /^(\d){10}$/,
-          },
-          comments: {
-            required: true,
-          },
-        },
-        messages: {
-          uname: "required",
-          phone: "required",
-          email: "required",
-          comments: "required",
-        },
-      });
-    });
-  </script>
+  
 
 </body>
 
