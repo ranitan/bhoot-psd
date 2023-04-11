@@ -269,109 +269,147 @@ body {
   background-color: #e2e7a7;
 }
 /* table in page5 */
+
 .table {
-  border-collapse: collapse;
-  width: 100%;
-  border-radius: 10px;
+  width: 75%;
+  border-style: hidden;
 }
 
-th {
-  padding: 18px;
-  font-size: 15px;
-  line-height: 14px;
-  color: #404142;
-  font-weight: 500;
-  font-family: "Quicksand";
+.table th {
+  background-color: #a9b33b;
 }
 
-.columns tr,
-td {
-  text-align: left;
-  padding: 18px 10px 18px 10px;
-}
-
-td img:hover {
-  transform: scale(1.5);
-  transition: ease-out;
-}
-
-.columns tr:nth-child(odd) {
-  background-color: whitesmoke;
+tr:nth-child(odd) {
+  background-color: #ffffff;
 }
 
 tr:nth-child(even) {
-  background-color: #cacf8f;
+  background-color: #eceed1;
 }
 
-.table thead th:last-child {
-  border-top-right-radius: 10px;
+#tablepara {
+  font-size: 8px;
+  font-family: "Quicksand";
+}
+
+#plan {
+  width: 70%;
+  font-family: "Quicksand";
+  font-size: 40px;
+}
+
+#full {
+  width: 15%;
+  font-family: "Quicksand";
+}
+
+#light {
+  width: 18%;
+  font-family: "Quicksand";
 }
 
 .table thead th:first-child {
   border-top-left-radius: 10px;
 }
 
-.table td th:last-child {
-  border-bottom-right-radius: 10px;
+.table thead th:last-child {
+  border-top-right-radius: 10px;
 }
 
-.table td th:first-child {
-  border-bottom-left-radius: 10px;
-}
-
-#one th {
-  font-size: 20px;
-  line-height: 15px;
-  color: #ffffff;
-  font-weight: 800;
-  font-family: "Quicksand";
-}
-
-#one span {
-  width: 168px;
-  height: 54px;
-  font-size: 11px;
-  line-height: 14px;
-  color: #ffffff;
+#tablecontent {
+  font-size: 10px;
+  color: #0a0a0a;
   font-weight: 500;
   font-family: "Quicksand";
+  white-space: pre-line;
 }
 
-.last #l1 {
+td:last-child {
+  box-shadow: 0 0.2rem 0.5em rgba(109, 109, 109, 0.4);
+}
+
+th:last-child {
+  box-shadow: 0 0.2rem 0.5em rgba(0, 0, 0, 0.4);
+}
+
+th:nth-child(2) {
+  box-shadow: 0 0.2rem 0.5em rgba(0, 0, 0, 0.4);
+}
+
+td:nth-child(2) {
+  box-shadow: 0 0.2rem 0.5em rgba(109, 109, 109, 0.4);
+}
+
+th:nth-child(1) {
+  box-shadow: 0 0.2rem 0.2em rgba(0, 0, 0, 0.4);
+}
+
+td:nth-child(1) {
+  box-shadow: 0 0.2rem 0.2em rgba(0, 0, 0, 0.4);
+}
+
+#price {
   font-size: 25px;
   line-height: 14px;
   color: #aab33b;
   font-weight: 700;
   font-family: "Quicksand";
+  border-bottom-left-radius: 14px;
 }
 
-.last #l2 {
-  font-size: 16px;
-  line-height: 15px;
-  color: #404142;
-  font-weight: 700;
-  font-family: "Quicksand";
-  text-align: right;
+.bottom {
+  box-shadow: 0px 15px 10px -1px rgba(0, 0, 0, 0.4)11;
 }
 
-.last td {
-  font-size: 16px;
+#lastrow {
+  font-size: 14px;
   line-height: 30px;
   color: #404142;
   font-weight: 700;
   font-family: "Quicksand";
+  white-space: pre-line;
 }
 
-#rect {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-image: url(/assets/images/rectangle.png);
-  font-size: 35px;
-  line-height: 46px;
+.month {
+  text-align: right;
+}
+
+#lastdata {
+  font-size: 14px;
+  line-height: 30px;
   color: #404142;
   font-weight: 700;
   font-family: "Quicksand";
+  border-bottom-right-radius: 14px;
+}
+
+
+/*table under contents */
+#bg2 {
+  width: 100vw;
+}
+
+.centered {
+  font-size: 150%;
+  line-height: 46px;
+  color: #404142;
+  font-weight: bolder;
+  font-family: "Quicksand";
   text-align: center;
+  margin-top: -7%;
+  text-decoration: none;
+}
+
+#click {
+  font-size: 150%;
+  font-weight: 900;
+  color: black;
+  text-decoration: none;
+  font-family: "Quicksand";
+}
+
+#click:hover {
+  color: #5f6517;
 }
 
 /*cards in page 6*/
@@ -534,8 +572,9 @@ tr:nth-child(even) {
     margin-left:55px;
 } 
 .columns{
-  width:auto
+  width:100px;
 }
+
 }
 
 @media screen  and (max-width:425px) {
@@ -567,7 +606,7 @@ tr:nth-child(even) {
   margin-top: 300px;
   }
   .columns{
-    width:auto
+    width:100px;
   }
 }
 @media screen and (max-width:375px){
@@ -585,6 +624,9 @@ tr:nth-child(even) {
 #computer #cbtn{
   margin-left: 10px;
 }
+.columns{
+  width:100px;
+}
 }
 @media screen and (max-width:320px){
   #bestcontainer {
@@ -594,9 +636,6 @@ tr:nth-child(even) {
   #card1 {
     offset:1;
     margin-left:27px;
-}
-.columns{
-  width:auto;
 }
 body{
   overflow-x: hidden;
@@ -611,6 +650,9 @@ body{
 #comp p{
   height:19%;
   width:371%;
+}
+.columns{
+  width:100px;
 }
 }
 @media screen and (max-width:768px){
@@ -631,7 +673,8 @@ body{
   margin-top:-100px;
 }
 .columns{
-  width:auto
+  width:100px;
+
 }
 #computer #cbtn{
   margin-left: 10px;
