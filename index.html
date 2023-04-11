@@ -10,6 +10,9 @@
   <script src="ASSETS/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
 </head>
 
 <body>
@@ -95,7 +98,7 @@ SOFTWARE IN NORTH AMERICA</pre>
 
       <div class="row ">
 
-        <div class="col-lg-2 cards">
+        <div id="card1" class="col-lg-2 cards offset-">
           <div class="card mb-4 align-items-center">
             <img src="/assets/images/cardimg1.svg" alt="" class="card-img w-50 h-50">
             <p class="card-text1"> User-friendly interface</p>
@@ -179,8 +182,7 @@ SOFTWARE IN NORTH AMERICA</pre>
                 </div>
 
                 <div class="col rec-text-col">
-                  <img src="/assets/images/home.png" alt="..." class="img-fluid rec-2 mt-2" width="15%"
-                    height="15%">
+                  <img src="/assets/images/home.png" alt="..." class="img-fluid rec-2 mt-2" width="15%" height="15%">
                   <p id="p3"> Commercial leases<br>
                     specially adapted
                   </p>
@@ -189,7 +191,7 @@ SOFTWARE IN NORTH AMERICA</pre>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col" id="ph">
             <img src="assets/images/phone.png" alt="" class="img-fluid" id="phonepp">
           </div>
         </div>
@@ -231,7 +233,7 @@ SOFTWARE IN NORTH AMERICA</pre>
             Professional aspect<br>
             Personalize document for your client, friend or financial institution
           </p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">View sample
+          <button type="button" class="btn btn-primary" id="cbtn" data-bs-toggle="button">View sample
             report</button>
         </div>
       </div>
@@ -320,140 +322,191 @@ SOFTWARE IN NORTH AMERICA</pre>
       </table>
     </div>
   </div>
-<!--cards-->
+  <!--cards-->
 
 
-<div class="container mt-5">
-  <div class="row">
-    <!--card1-->
-    <div class="col-md-4">
-      <div class="--card">
-        <div class="--card-body">
-          <img class="img-resposive img-fluid" src="assets/images/c1.png"id="botcard123">
-        </div>
-        <div class="col-md-9">
-          <div class="--card" id="innercard">
+  <div class="container mt-5">
+    <div class="row">
+      <!--card1-->
+      <div class="col-md-4">
+        <div class="--card">
+          <div class="--card-body">
+            <img class="img-resposive img-fluid" src="assets/images/c1.png" id="botcard123">
+          </div>
+          <div class="col-md-9">
+            <div class="--card" id="innercard">
               <img src="/assets/images/setting.png">
               <div class="--card-text ms-1" id="innercardtext">
-                <p  id="innerpara">To make an informed decision when buying or purchasing an income property !</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-        <!--card2-->
-        <div class="col-md-4">
-          <div class="--card">
-            <div class="--card-body">
-              <img class="img-resposive img-fluid" src="/assets/images/c2.png" id="botcard123">
-            </div>
-            <div class="col-md-9">
-              <div class="--card" id="innercard">
-                  <img src="/assets/images/headphones.png">
-                  <div class="--card-text ms-1" id="innercardtext">
-                    <p  id="innerpara">FREE, fast and courteous customer support !</p>
-                </div>
+                <p id="innerpara">To make an informed decision when buying or purchasing an income property !</p>
               </div>
             </div>
           </div>
         </div>
-            <!--card3-->
-    <div class="col-md-4">
-      <div class="--card">
-        <div class="--card-body">
-          <img class="img-resposive img-fluid" src="/assets/images/c3.png" id="botcard123">
+      </div>
+      <!--card2-->
+      <div class="col-md-4">
+        <div class="--card">
+          <div class="--card-body">
+            <img class="img-resposive img-fluid" src="/assets/images/c2.png" id="botcard123">
+          </div>
+          <div class="col-md-9">
+            <div class="--card" id="innercard">
+              <img src="/assets/images/headphones.png">
+              <div class="--card-text ms-1" id="innercardtext">
+                <p id="innerpara">FREE, fast and courteous customer support !</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-9">
-          <div class="--card" id="innercard">
+      </div>
+      <!--card3-->
+      <div class="col-md-4">
+        <div class="--card">
+          <div class="--card-body">
+            <img class="img-resposive img-fluid" src="/assets/images/c3.png" id="botcard123">
+          </div>
+          <div class="col-md-9">
+            <div class="--card" id="innercard">
               <img class="img-resposive img-fluid" src="/assets/images/graph.png">
               <div class="--card-text ms-1" id="innercardtext">
-                <p  id="innerpara">Zoom-imm is easy to use and produces professional reports</p>
+                <p id="innerpara">Zoom-imm is easy to use and produces professional reports</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<!--footer-->
-<footer class="footer-bg mt-5">
-  <div class="container-fluid">
+  <!--getting the deal-->
+  <div class="row justify-content-center mt-5">
+    <div class="dealbutton text-center">
+      <p class="btn-p">Get the real deal</p>
+      <button onclick="dealbtn()">START NOW</button>
+    </div>
+  </div>
+  <!--footer-->
+  <footer class="footer-bg mt-5">
+    <div class="container-fluid">
       <div class="row justify-content-lg-center">
-          <div class="col-6 col-sm-3 col-md-2 mt-4">
-              <h6>ABOUT US</h6>
-              <div class="font-3 mt-3">
-                  <p>iAnalyzeREI instantly analyzes commercial and multifamily income properties. This web-based software is an essential tool for every real estate professional.
-                  </p>
-              </div>
+        <div class="col-6 col-sm-3 col-md-2 mt-4">
+          <h6>ABOUT US</h6>
+          <div class="font-3 mt-3">
+            <p>iAnalyzeREI instantly analyzes commercial and multifamily income properties. This web-based software is
+              an essential tool for every real estate professional.
+            </p>
           </div>
+        </div>
 
-          <div class="col-6 col-sm-3 col-md-3  mt-4">
+        <div class="col-6 col-sm-3 col-md-3  mt-4">
 
-              <h6>GET IN TOUCH </h6>
-              <div class="font-4 ">
-                  <p> <a href="#" class="font-bg-4"><i class="fa-solid fa-location-dot pe-2" id="fav"></i>85, rue Albert # 202 Sherbrooke
-                      Sherbrooke (QC) Canada J1H 1N
-                      </a></p>
-                  <p>
-                      <a href="#" class="font-bg-4"> <i class="fa-solid fa-phone-volume pe-2 " id="fav"></i>+1 222-222-222</a>
-                  </p>
-                  <p>
-                      <a href="#" class="font-bg-4"> <i class="fa-regular fa-envelope pe-2" id="fav"></i>support@magexTechnologies.com</a>
-                  </p>
+          <h6>GET IN TOUCH </h6>
+          <div class="font-4 ">
+            <p> <a href="#" class="font-bg-4"><i class="fa-solid fa-location-dot pe-2" id="fav"></i>85, rue Albert # 202
+                Sherbrooke
+                Sherbrooke (QC) Canada J1H 1N
+              </a></p>
+            <p>
+              <a href="#" class="font-bg-4"> <i class="fa-solid fa-phone-volume pe-2 " id="fav"></i>+1 222-222-222</a>
+            </p>
+            <p>
+              <a href="#" class="font-bg-4"> <i class="fa-regular fa-envelope pe-2"
+                  id="fav"></i>support@magexTechnologies.com</a>
+            </p>
 
-              </div>
           </div>
+        </div>
 
-          <div class="col-6 col-sm-3 col-md-3   mt-4">
-              <h6>QUICK LINKS </h6>
-              <div class="row">
-                  <div class="font-5 col-5">
-                      <p><a href="#" class="font-bg-5">HOME</a></p>
-                      <p> <a href="#" class="font-bg-5">LEARN MORE</a></p>
-                      <p><a href="#" class="font-bg-5">PLANS</a></p>
-                      <p><a href="#" class="font-bg-5">CONTACT US</a></p>
 
-                  </div>
-                  <div class="col-7 font-5">
-                      <p> <a href="#" class="font-bg-5">SECURITY AND CONFI
-                        DENTIALITY</a></p>
-                      <p> <a href="#" class="font-bg-5">TERMS AND CONDITIONS</a></p>
-                  </div>
-              </div>
+        <div class="col-6 col-sm-3 col-md-3   mt-4">
+          <h6>QUICK LINKS </h6>
+          <div class="row">
+            <div class="font-5 col-5">
+              <p><a href="#" class="font-bg-5">HOME</a></p>
+              <p> <a href="#" class="font-bg-5">LEARN MORE</a></p>
+              <p><a href="#" class="font-bg-5">PLANS</a></p>
+              <p><a href="#" class="font-bg-5">CONTACT US</a></p>
+
+            </div>
+            <div class="col-7 font-5">
+              <p> <a href="#" class="font-bg-5">SECURITY AND CONFI
+                  DENTIALITY</a></p>
+              <p> <a href="#" class="font-bg-5">TERMS AND CONDITIONS</a></p>
+            </div>
           </div>
-          <div class="col-6 col-sm-3 col-md-2  mt-4">
-              <div class="input-group flex-nowrap mb-2">
-                  <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-user" id="fav-2"></i></span>
-                  <input type="text" class="form-control" placeholder="Username">
-              </div>
-              <div class="input-group flex-nowrap mb-2">
-                  <span class="input-group-text icon" id="addon-wrapping"><i class="fa-regular fa-envelope" id="fav-2" ></i></span>
-                  <input type="email" class="form-control" placeholder="Email">
-              </div>
-              <div class="input-group flex-nowrap mb-2">
-                  <span class="input-group-text icon" id="addon-wrapping"><i class="fa-sharp fa-solid fa-square-phone" id="fav-2"></i></span>
-                  <input type="text" class="form-control" placeholder="Phone">
-              </div>
-              <div class="input-group flex-nowrap mb-2">
-                  <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-comment" id="fav-2"></i></span>
-                  <input type="text" class="form-control" placeholder="Comments">
-              </div>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                  <button class="rounded-1 but-footer ps-3 pe-3" type="button">SUBMIT</button>
-              </div>
+        </div>
+
+
+        <form class="col-6 col-sm-3 col-md-2  mt-4 " method="get"
+          action="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1CHBD_enIN1041IN1042&oq=goog&aqs=chrome.2.69i57j35i39j46i131i199i433i465i512j69i60l4j5.2019j0j7&sourceid=chrome&ie=UTF-8"
+          id="myform" name="myform">
+          <div class="input-group flex-nowrap mb-2" id="myform" name="myform">
+            <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-user" id="fav-2"></i></span>
+            <input type="text" class="form-control" id="uname" placeholder="Username" name="uname">
           </div>
+          <div class="input-group flex-nowrap mb-2" id="myform" name="myform">
+            <span class="input-group-text icon" id="addon-wrapping"><i class="fa-regular fa-envelope"
+                id="fav-2"></i></span>
+            <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+          </div>
+          <div class="input-group flex-nowrap mb-2" id="myform" name="myform">
+            <span class="input-group-text icon" id="addon-wrapping"><i class="fa-sharp fa-solid fa-square-phone"
+                id="fav-2"></i></span>
+            <input type="text" class="form-control" id="phone" placeholder="Phone" name="phone">
+          </div>
+          <div class="input-group flex-nowrap mb-2" id="myform" name="myform">
+            <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-comment"
+                id="fav-2"></i></span>
+            <input type="text" class="form-control" id="comments" placeholder="Comments" name="comments">
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="rounded-1 but-footer ps-3 pe-3" type="submit" value="register">SUBMIT</button>
+          </div>
+        </form>
+
       </div>
-  </div>
-  <div class="text-center text-white p-3 mt-3" id="basefoot">
-    <div class="row">
-    <div class="col-8" id="basefoottext">
-    © COPYRIGHT 2021 - MAGEX TECHNOLOGIES INC. All RIGHTS RESERVED.
-  </div>
-  <div class="col-4" id="basefoottext">T & CS</div>
-  </div>
-</div>
-</footer>
+    </div>
+
+    <div class="text-center text-white p-3 mt-3" id="basefoot">
+      <div class="row">
+        <div class="col-8" id="basefoottext">
+          © COPYRIGHT 2021 - MAGEX TECHNOLOGIES INC. All RIGHTS RESERVED.
+        </div>
+        <div class="col-4" id="basefoottext">T & CS</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $("#myform").validate({
+        rules: {
+          uname: {
+            required: true,
+            minlength: 5,
+            maxlength: 10,
+            pattern: /^(\w){5,10}$/,
+          },
+          email: {
+            required: true,
+            email: true,
+          },
+          phone: {
+            required: true,
+            pattern: /^(\d){10}$/,
+          },
+          comments: {
+            required: true,
+          },
+        },
+        messages: {
+          uname: "required",
+          phone: "required",
+          email: "required",
+          comments: "required",
+        },
+      });
+    });
+  </script>
 
 </body>
 

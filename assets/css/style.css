@@ -13,9 +13,10 @@ body {
   font-size: small;
   font-family: "Quicksand";
 }
-#navcontent:hover{
+
+#navcontent:hover {
   transform: scale(1.1);
-  transition:ease-out ;
+  transition: ease-out;
 }
 
 #button {
@@ -25,13 +26,13 @@ body {
 #button:hover {
   background-color: #838b26;
   transform: scale(1.1);
-  transition:ease-out ;
+  transition: ease-out;
 }
 
 #bestcontainer p {
   color: #a9b33b;
   font-family: the best;
-  
+
 }
 
 #pre {
@@ -113,11 +114,12 @@ body {
   margin-left: 30px;
   padding: 10px;
   margin-right: 10px;
-  
+
 }
-.card:hover{
+
+.card:hover {
   transform: scale(1.1);
-  transition:ease-out ;
+  transition: ease-out;
 }
 
 .card-card {
@@ -181,19 +183,22 @@ body {
   font-family: "Quicksand";
   text-align: center;
 }
+
 #phonepp {
   height: 400px;
-  width:250px ;
+  width: 250px;
   position: absolute;
 }
+
 #phone-img img {
   background-image: url(/assets/images/homebg.png);
   height: 40px;
   padding: 4px 5px;
 }
-#phone-img img:hover{
+
+#phone-img img:hover {
   transform: scale(1.1);
-  transition:ease-out ;
+  transition: ease-out;
 }
 
 .container #p1 {
@@ -204,6 +209,7 @@ body {
   font-weight: 700;
   font-family: "Quicksand";
 }
+
 .container #p2 {
   width: 654px;
   height: 238px;
@@ -213,6 +219,7 @@ body {
   font-weight: 500;
   font-family: "Quicksand";
 }
+
 .container #p3 {
   padding-top: 10px;
   font-size: 20px;
@@ -227,6 +234,7 @@ body {
   width: 450px;
   height: 600px;
 }
+
 #comp1 p {
   width: 646px;
   height: 202px;
@@ -236,6 +244,7 @@ body {
   font-weight: 500;
   font-family: "Quicksand";
 }
+
 #computer button {
   width: 235px;
   height: 47px;
@@ -277,10 +286,12 @@ td {
   text-align: left;
   padding: 18px 10px 18px 10px;
 }
- td img:hover{
+
+td img:hover {
   transform: scale(1.5);
-  transition:ease-out ;
+  transition: ease-out;
 }
+
 .columns tr:nth-child(odd) {
   background-color: whitesmoke;
 }
@@ -288,18 +299,22 @@ td {
 tr:nth-child(even) {
   background-color: #cacf8f;
 }
-.table thead th:last-child{
-    border-top-right-radius:10px;
-  }
-  .table thead th:first-child{
-    border-top-left-radius:10px;
-  }
-  .table td th:last-child{
-    border-bottom-right-radius:10px;
-  }
-  .table td th:first-child{
-    border-bottom-left-radius:10px;
-  }
+
+.table thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.table thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.table td th:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.table td th:first-child {
+  border-bottom-left-radius: 10px;
+}
 
 #one th {
   font-size: 20px;
@@ -343,22 +358,25 @@ tr:nth-child(even) {
   font-weight: 700;
   font-family: "Quicksand";
 }
-#rect{
-padding-top: 80px;
-padding-bottom: 80px;
-background-image: url(/assets/images/rectangle.png);
-font-size: 35px;
-line-height: 46px;
-color: #404142;
-font-weight: 700;
-font-family: "Quicksand";
-text-align: center;
+
+#rect {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(/assets/images/rectangle.png);
+  font-size: 35px;
+  line-height: 46px;
+  color: #404142;
+  font-weight: 700;
+  font-family: "Quicksand";
+  text-align: center;
 }
-     
-.--card:hover:hover{
+
+/*cards*/
+.--card:hover:hover {
   transform: scale(1.1);
-  transition:ease-out ;
+  transition: ease-out;
 }
+
 #innercard {
   display: flex;
   align-items: center;
@@ -367,13 +385,15 @@ text-align: center;
   border: 1px solid #ccc;
   background-color: #fdffe9;
   margin-left: 50px;
-  margin-top:-40px;
+  margin-top: -40px;
   position: relative;
   z-index: 1;
 }
-#botcard123{
+
+#botcard123 {
   height: 238px;
 }
+
 #innercardtext {
   flex: 1;
 }
@@ -386,7 +406,32 @@ text-align: center;
   font-family: "Quicksand";
 }
 
+/*getting deal*/
+.dealbutton p {
+  font-size: 30px;
+  color: #404142;
+  font-weight: 700;
+  font-family: "Quicksand";
+  text-align: center;
+  margin-left: 30px;
+}
 
+.dealbutton button {
+  width: 225px;
+  height: 40px;
+  background-color: #aab33c;
+  border: none;
+  margin-left: 30px;
+  margin-top: -1%;
+  color: white;
+  font-family: "Quicksand";
+}
+
+.dealbutton button:hover {
+  background-color: #848d00;
+}
+
+/*footer*/
 .footer-bg {
   background-image: url(/assets/IMAGES/footbg.png);
 }
@@ -454,16 +499,50 @@ text-align: center;
   background-color: #acb643;
 }
 
-#basefoot{
+#basefoot {
   background-color: #aab33c;
 }
-#basefoottext{
-font-size: 13px;
-letter-spacing: 2px;
-font-weight: 500;
-font-family: "Quicksand";
+
+#basefoottext {
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: "Quicksand";
 }
-#basefootertext:hover{
+
+#basefootertext:hover {
   color: #313132;
   cursor: pointer;
+}
+
+
+/* media queries */
+@media screen and (min-width:300px) and (max-width:1024px) {
+
+  #cimg,
+  #ph {
+    display: none;
+  }
+
+  #bestcontainer {
+    margin-top: 100px;
+    position: absolute;
+  }
+
+  #card1 {
+    margin-left: 60px;
+  }
+
+  #bestcontainer #pre {
+    display: none;
+  }
+
+  #innercard {
+    display: none;
+  }
+
+  #cbtn button {
+    margin-left: 500px;
+  }
+
 }
